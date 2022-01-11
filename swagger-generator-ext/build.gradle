@@ -1,0 +1,15 @@
+plugins {
+    id 'java'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'io.swagger.codegen.v3:swagger-codegen-cli:3.0.31'
+}
+
+test {
+    useJUnitPlatform()
+}

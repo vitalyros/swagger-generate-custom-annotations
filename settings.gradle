@@ -1,0 +1,5 @@
+rootProject.name = 'SwaggerGenerateCustomAnnotations'
+include 'swagger-generator-ext'
+include 'codegen'
+include 'commons'
+
