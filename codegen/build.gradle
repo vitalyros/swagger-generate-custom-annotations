@@ -8,7 +8,7 @@ repositories {
 }
 
 dependencies {
-    swaggerCodegen project(':swagger-generator-ext')
+    swaggerCodegen project(':swagger-codegen-cli-ext')
     implementation project(':commons')
     implementation 'com.fasterxml.jackson.core:jackson-annotations:2.13.0'
     implementation 'com.fasterxml.jackson.core:jackson-databind:2.13.0'
@@ -21,7 +21,7 @@ dependencies {
     implementation 'org.springframework:spring-context:5.3.10'
 }
 
-resolveSwaggerTemplate.dependsOn(project(":swagger-generator-ext").getTasksByName("build", false))
+resolveSwaggerTemplate.dependsOn(project(":swagger-codegen-cli-ext").getTasksByName("build", false))
 
 swaggerSources {
     petstore {
